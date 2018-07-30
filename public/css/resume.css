@@ -1,0 +1,155 @@
+/*Color Palette
+RAISIN BLACK - #1E1E24
+GRAY BLUE - #8D99AE
+DEEP RUBY - #734B5E
+GREEN (CRAYOLA) - #21A179
+LIGHT PASTEL PURPLE - #B0A3D4
+ANTI-FLASH WHITE - #EDF2F4 
+FONT STYLE- Josefin Slab
+*/
+
+@import url('https://fonts.googleapis.com/css?family=Josefin+Slab:100,300,400,900');
+
+* {
+	padding: 0;
+	margin: 0;
+	font-family: 'Josefin Slab', serif;
+	position: relative;
+}
+/* Navbar Styling */
+
+.navbar {
+    background-color: transparent;
+    color: #EDF2F4;
+    font-family: 'Josefin Slab', serif;
+    display: inline;
+    border-radius: 0;
+    border: none;
+}
+
+li a {
+    display: block;
+    color: #EDF2F4;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+.navbar-nav>li>a {
+    font-size: 1.7em;
+    font-weight: 500;
+}
+
+.navbar-brand {
+    padding: 0px;
+    display: inline;
+}
+
+.navbar-brand>img {
+    height: 100%;
+    width: auto;
+    max-height: 120%;
+}
+
+.navbar .navbar-nav>li>a:hover,
+.navbar .navbar-nav>li>a:focus {
+    background-color: #1E1E24;
+    transition: 0.10s all linear;
+    border-radius: 50px;
+    color: #EDF2F4;
+}
+h1 {
+    color: #EDF2F4;  
+}
+
+.timeline {
+	padding: 40px 0px;
+	width: 80%;
+	margin-left: 8%;
+	margin-bottom: 40px;
+}
+
+.timeline:before {
+	content: "";
+	position: absolute;
+	top: 40px;
+	left: 65px;
+	width: 3px;
+	height: calc(100% - 80px);
+	background: #734B5E;
+}
+
+.timeline .column {
+	margin: 40px 40px 40px 120px;
+}
+
+.timeline .column .title h1 {
+	font-size: 120px;
+	color: rgba(0,0,0,0.1);
+	font-family: serif;
+	letter-spacing: 3px;
+}
+
+.timeline .column .title h1:before {
+	content: "";
+	position: absolute;
+	left: -62px;
+	top: 86px;
+	width: 10px;
+	height: 10px;
+	background:  #EDF2F4; 
+	border: 3px solid #734B5E;
+}
+
+.timeline .column .title h2 {
+	margin-top: -60px;
+	font-size: 33px;
+}
+
+.timeline .column .description p {
+	font-size: 13px;
+	line-height: 20px;
+	margin-left: 20px;
+	margin-top: 10px;
+	font-family: serif;
+}
+
+.timeline .column .description {
+	border-left: 1px solid #1E1E24;
+}
+
+.main {
+	width: 80%;
+	margin-left: 10%;
+	margin-top: 80px;
+}
+
+.main h1 {
+	font-size: 80px;
+	line-height: 60px;
+}
+
+.main p {
+	font-size: 13px;
+	line-height: 20px;
+	font-family: serif;
+	text-align: right;
+}
+#myBtn {
+	display: none;
+	position: fixed;
+	bottom: 20px;
+	right: 30px;
+	z-index: 99;
+	font-size: 18px;
+	border: none;
+	outline: none;
+	background-color: #734B5E;
+	color:#EDF2F4;
+	cursor: pointer;
+	padding: 15px;
+	border-radius: 4px;
+}
+#myBtn:hover {
+	background-color: #21A179;
+}
